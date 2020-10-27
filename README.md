@@ -6,7 +6,7 @@ Qt配置Opencv,并在Qt中正常使用的步骤
 #### 1.1 Qt的安装
 我使用的Qt版本为Qt 5.13.0开源版本，安装过程非常容易，按照步骤一步步来不会有错，<br>其中需要注意在`选择组件`中必须包含`MinGW7.3.0 32-bit`和`MinGW7.3.0 64-bit`，当然我建议电脑空间足够的话可以全选安装。
 #### 1.2 Opencv的安装
-在安装好Qt后，进行Opencv库的下载安装，我下载的版本为4.5.0，可以直接在[官网](https://opencv.org/releases/ "悬停显示")下载，下载source后直接解压到路径1，路径1我们后面Cmake后用到。
+在安装好Qt后，进行Opencv库的下载安装，我下载的版本为4.5.0，可以直接在[官网](https://opencv.org/releases/ "https://opencv.org/releases/")下载，下载source后直接解压到路径1，路径1我们后面Cmake后用到。
 #### 1.3 Cmake的安装
 我使用的版本是cmake-3.18.4，下载好后直接运行.exe文件，一步步顺序点击，到`Install Options`时要选择第二项`Add CMake to the system PATH for all users`。<br>如果此处你没有使用软件自带的系统环境配置，请在1.4中自行手动配置。
 #### 1.4 系统环境变量的配置
