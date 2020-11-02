@@ -36,6 +36,16 @@ LIBS += E:\OpenCV\mybuild\install\x86\mingw\bin\libopencv_features2d346.dll
 LIBS += E:\OpenCV\mybuild\install\x86\mingw\bin\libopencv_calib3d346.dll
 ```
 添加后运行大概率会crash，我找了一晚上，终于把这些..\mingw\bin\*.dll全部移动到project文件的debug目录下解决了（路径类似于E:\Qtproject\build-opentest-Desktop_Qt_5_13_0_MinGW_32_bit-Debug\debug）。<br>
+正确的做法其实是在`.pro`文件里正确配置LIBS，直接把官方代码贴上作为参考：
+```cpp
+#LIBS += -L$$(OPENCV_SDK_DIR)/x86/mingw/lib \
+#        -lopencv_core320        \
+#        -lopencv_highgui320     \
+#        -lopencv_imgcodecs320   \
+#        -lopencv_imgproc320     \
+#        -lopencv_features2d320  \
+#        -lopencv_calib3d320
+```
 ### 参考与感谢
 我配置过程中参考了论坛和网站中各位前辈的配置过程，其中主要有：
 * [https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows](https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows) `Qt官方`
