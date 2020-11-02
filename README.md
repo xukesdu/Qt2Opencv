@@ -38,7 +38,7 @@ LIBS += E:\OpenCV\mybuild\install\x86\mingw\bin\libopencv_calib3d346.dll
 添加后运行大概率会crash，我找了一晚上，终于把这些..\mingw\bin\*.dll全部移动到project文件的debug目录下解决了（路径类似于E:\Qtproject\build-opentest-Desktop_Qt_5_13_0_MinGW_32_bit-Debug\debug）。<br>
 ### 参考与感谢
 我配置过程中参考了论坛和网站中各位前辈的配置过程，其中主要有：
-* [https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows](https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows)
+* [https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows](https://wiki.qt.io/How_to_setup_Qt_and_openCV_on_Windows) `Qt官方`
 * [http://baijiahao.baidu.com/s?id=1662883232064729369&wfr=spider&for=pc](http://baijiahao.baidu.com/s?id=1662883232064729369&wfr=spider&for=pc) `程序客`
 * [https://www.cnblogs.com/muyueshi/p/11771716.html](https://www.cnblogs.com/muyueshi/p/11771716.html) `木月石`
 * [https://blog.csdn.net/qq_17550379/article/details/78296057](https://blog.csdn.net/qq_17550379/article/details/78296057) `coordinate_blog`
